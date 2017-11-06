@@ -30,7 +30,7 @@ class Account:
             self.nerdie[server.id][user.id] = {}
             dataIO.save_json(self.profile, self.nerdie)
             data = discord.Embed(colour=user.colour)
-            data.add_field(name="Congrats!:sparkles:", value="You have officaly created your acconut for **{}**, {}.".format(server, user.mention))
+            data.add_field(name="Congrats!:sparkles:", value="You have officaly created your account for **{}**, {}.".format(server, user.mention))
             await self.bot.say(embed=data)
         else: 
             data = discord.Embed(colour=user.colour)
